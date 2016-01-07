@@ -1,0 +1,11 @@
+main: io.github.zacklukem.luablocks.PluginDelegate
+name: LuaBlocks
+version: 0.1 BETA
+author: zacklukem
+description: A plugin for easy bukkit modding
+commands:
+  luaplugins:
+    description: lists plugins
+    usage: /luaplugins
+    permission: luablocks.listplugins
+    permission-message: You dont have luablocks.listplugins

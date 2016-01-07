@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LuaBlocks:jar">
+    <output-path>$USER_HOME$/Desktop/Test Server/plugins</output-path>
+    <root id="archive" name="LuaBlocks.jar">
+      <element id="module-output" name="LuaBlocks" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../LuaTests/jar/luaj-jse-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Test Server/craftbukkit_server.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
