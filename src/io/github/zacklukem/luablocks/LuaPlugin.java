@@ -12,6 +12,10 @@ import java.io.File;
  */
 public class LuaPlugin {
 
+    public LuaValue getPluginNamespace() {
+        return pluginNamespace;
+    }
+
     private LuaValue pluginNamespace;
 
     public LuaPlugin(File file) {
@@ -47,4 +51,6 @@ public class LuaPlugin {
 //        LuaValue chunk = PluginDelegate.GLOBALS.loadfile(file.getPath());
 //        chunk.call();
     }
+
+
 }

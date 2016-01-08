@@ -2,8 +2,6 @@ package io.github.zacklukem.bukkit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.World;
-import org.luaj.vm2.Lua;
 import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.Varargs;
 import org.luaj.vm2.lib.*;
@@ -50,7 +48,7 @@ public class bukkit extends TwoArgFunction {
 
         block: {
             LuaValue block = tableOf();
-            block.set("placeBlock", new blockPlaceBlock());
+            block.set("setBlock", new blockSetBlock());
             library.set("block", block);
         }
 
@@ -59,7 +57,7 @@ public class bukkit extends TwoArgFunction {
 
     }
 
-    static class blockPlaceBlock extends LibFunction {
+    static class blockSetBlock extends LibFunction {
         @Override
         public Varargs invoke(Varargs varargs) {
             int x = varargs.arg1().checkint();
