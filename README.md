@@ -4,10 +4,14 @@
 
   This plugin lets you write small scripts in Lua which can be executed by the Bukkit Server. It exposes some of the Bukkit API through some abstractions. Currently, not a lot could be done using it except very basic things because it is still in Alpha and very little of API is exposed, and very little work was done by the original author which is why this text was originally in a fork, since the original readme was not complete and was totally useless.
 
+
   Here is a sample to get you started:
+
+
 
 Filesystem Tree (from the Bukkit directory):
 ```
+
 Server
 │
 ├──plugins
@@ -22,6 +26,7 @@ Server
 │
 ┗──Bukkit.jar
 ```
+
 
 sampleplugin.lua
 ```lua
@@ -69,3 +74,7 @@ function sampleplugin.onCommand (sender, label, args)
 end
 
 ```
+
+Change, experiment, prototype, do whatever you want!
+
+--Edited by MaxTheBackspace on July 3, 2016
